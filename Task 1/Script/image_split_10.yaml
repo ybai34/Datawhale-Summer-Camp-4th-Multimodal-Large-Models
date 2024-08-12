@@ -1,0 +1,8 @@
+
+dataset_path: input/pretrain_stage_1_10k/mgm_pretrain_stage_1_10k.jsonl
+export_path: input/pretrain_stage_1_10k/mgm_pretrain_stage_1_10.jsonl
+
+np: 1
+process:
+ - random_selector:
+      select_ratio: 0.001

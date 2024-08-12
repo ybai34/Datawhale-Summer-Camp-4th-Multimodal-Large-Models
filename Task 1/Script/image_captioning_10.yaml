@@ -1,0 +1,9 @@
+
+dataset_path: input/pretrain_stage_1_10k/mgm_pretrain_stage_1_10.jsonl
+export_path: output/image_captioning_output/res_10k.jsonl
+
+np: 1
+process:
+  - image_captioning_mapper:
+      hf_img2seq: '/root/autodl-tmp/better_synth_baseline_autoDL/models/goldsj/blip2-opt-2___7b'  # You can replace this path to a local downloaded HF model
+      keep_original_sample: false  # we only need the recaptioned captions
